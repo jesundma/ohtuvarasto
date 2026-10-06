@@ -1,0 +1,1 @@
+Original ohtuvarasto equals this clone repo after pull. This is new stuff, should equal again after pulling. Git add -p do not work if file is new = untracked. Try what happens if have this untracked and make changes to existing file and do git add -p.

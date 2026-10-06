@@ -1,1 +1,3 @@
 This is a clone, a Cylon.
+
+This row is a change to tracked file. Try how it works when there are untracked file and tracked file and do git add -p.
