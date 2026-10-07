@@ -76,4 +76,4 @@ class TestVarasto(unittest.TestCase):
     def test_merkkijonoesitys_tulostuu_oikein(self):
         # Covers: __str__ string formatting conversion evaluation
         self.varasto.lisaa_varastoon(4)
-        self.assertEqual(str(self.varasto), "VIRHE = 4, vielä tilaa 6")
+        self.assertEqual(str(self.varasto), "saldo = 4, vielä tilaa 6")
