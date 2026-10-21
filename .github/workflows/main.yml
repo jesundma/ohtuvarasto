@@ -25,4 +25,4 @@ jobs:
         env: 
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Run pylint
-        run: uv run pylint ohtuvarasto/src
+        run: uv run pylint src
