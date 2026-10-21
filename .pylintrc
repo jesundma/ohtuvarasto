@@ -17,9 +17,6 @@ disable=raw-checker-failed,
         missing-function-docstring,
         missing-class-docstring
 
-[BASIC]
-    define-attr-methods=__init__
-
 [FORMAT]
 
     max-line-length=80
