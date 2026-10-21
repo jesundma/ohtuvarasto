@@ -1,3 +1,4 @@
+from ohtuvarasto.src import varasto
 from varasto import Varasto
 
 
@@ -8,7 +9,12 @@ def main():
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
     print(f"Olutvarasto: {olutta}")
-
+    if mehua.paljonko_mahtuu() > 0:
+        print("Mehuvarastoon mahtuu vielä tilaa")
+        if olutta.paljonko_mahtuu() > 0:
+            print("Olutvarastoon mahtuu vielä tilaa")
+            if mehua.paljonko_mahtuu() + olutta.paljonko_mahtuu() < varasto.tilavuus:
+                   print("Yhteensä varastoon mahtuu vielä tilaa")
     print("Olut getterit:")
     print(f"saldo = {olutta.saldo}")
     print(f"tilavuus = {olutta.tilavuus}")

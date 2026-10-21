@@ -17,8 +17,17 @@ disable=raw-checker-failed,
         missing-function-docstring,
         missing-class-docstring
 
+[BASIC]
+    define-attr-methods=__init__
+
 [FORMAT]
+
+    max-line-length=80
+    indent-after-paren=4
 
 [REFACTORING]
 
+    max-nested-blocks=2
+
 [DESIGN]
+    max-statements=10

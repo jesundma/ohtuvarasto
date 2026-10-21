@@ -6,18 +6,17 @@ class Varasto:
             # virheellinen, nollataan
             self.tilavuus = 0.0
 
+    def alusta_saldo(self, alku_saldo):
         if alku_saldo < 0.0:
             # virheellinen, nollataan
             self.saldo = 0.0
-        elif alku_saldo <= tilavuus:
+        elif alku_saldo <= self.tilavuus:
             # mahtuu
             self.saldo = alku_saldo
         else:
             # täyteen ja ylimäärä hukkaan!
-            self.saldo = tilavuus
+            self.saldo = self.tilavuus
 
-    # lisätään uusi kommenttirivi tehtävää 11 varten
-    # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
         return self.tilavuus - self.saldo
 
@@ -33,7 +32,7 @@ class Varasto:
         if maara < 0:
             return 0.0
         if maara > self.saldo:
-            kaikki_mita_voidaan = self.saldo
+            kaikki_mita_voidaan = self.saldo #lisäämällä vain tarpeeksi kommenttitekstiä ylitetään 80 merkin raja helposti
             self.saldo = 0.0
 
             return kaikki_mita_voidaan
