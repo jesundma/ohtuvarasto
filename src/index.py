@@ -5,12 +5,6 @@ def nayta_luonti(mehua, olutta):
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
     print(f"Olutvarasto: {olutta}")
-    if mehua.paljonko_mahtuu() > 0:
-        print("Mehuvarastoon mahtuu vielä tilaa")
-    if mehua.paljonko_mahtuu() > 0 and olutta.paljonko_mahtuu() > 0:
-        print("Olutvarastoon mahtuu vielä tilaa")
-        print("Yhteensä varastoon mahtuu vielä tilaa")
-
 
 def nayta_getterit(olutta):
     print("Olut getterit:")
